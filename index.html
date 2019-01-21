@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <title>自己紹介</title>
+   <link rel="stylesheet" href="css.css">
+   <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <header class="leftNavigation">
+       <p></p>
+       <img src ="selfy.jpg" width="80%" height="30%">
+        <div class="btn btn-one">
+        	<p id="Aboutme">About me</p>
+        </div> 
+        	 <p id="asyncResult"></p>
+        	 <p id="2nd"></p>   
+
+    </header>
+    <div class="content">
+        <p><b>- Contents -</b></p>
+        <div>
+           <p id="selfintroduction"></p>
+           <p id="omellete"></p>
+       </div>
+         <script type="text/javascript">
+            $(function () {
+                $("#Aboutme").on("click", function () {
+                     $('#selfintroduction').load('selfintroduction.html');  
+                     $('#2nd').load('2nd.html');
+                                    });
+                });      
+       </script>
+          <script type="text/javascript">
+            $(document).ajaxComplete(function() {
+                $("#Food").on("click", function () {
+                     $('#selfintroduction').load('selfintroduction.html');   
+                                    });
+                });      
+       </script>
+    </div>
+</body>

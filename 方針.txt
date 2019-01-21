@@ -1,0 +1,1 @@
+Ajaxでコンテンツ領域のHTMLを書き換えselfy.jpgを表示
